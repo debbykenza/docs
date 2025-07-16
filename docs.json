@@ -1,7 +1,14 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "API DE GESTION DE LIVRAION DOM",
+  "openapi": "./openapi.json",
+  "api": {
+    "baseUrl": "http://localhost:8000",
+    "auth": {
+      "method": "bearer"
+    }
+  },
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
