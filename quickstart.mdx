@@ -18,14 +18,14 @@ description: "This section will help you get up and running with the DOM Deliver
   <Step title="Create an Account" titleSize="h2">
     To interact with the API, first register as a user:
 
-    ![image.png](/images/image.png)
+    ![Captured'écran2025 07 17191749 Pn](/Captured'écran2025-07-17191749.png)
   </Step>
   <Step title="Authenticate and Get a Token" titleSize="h2">
     Login to receive your access token:
 
     <RequestExample>
 
-    ``` filename
+    ```filename
     {
       "email": "your@email.com",
       "mot_de_passe": "yourpassword"
@@ -56,7 +56,7 @@ description: "This section will help you get up and running with the DOM Deliver
 
     </CodeGroup>
 
-     If using `Python:`
+    If using `Python:`
 
     <CodeGroup>
 
@@ -78,7 +78,7 @@ description: "This section will help you get up and running with the DOM Deliver
     </Warning>
     <CodeGroup>
 
-    ``` .env
+    ```.env
     API_KEY=eyJhbGciOiJIUzI1NiIsInR...
     ```
 
@@ -93,7 +93,7 @@ description: "This section will help you get up and running with the DOM Deliver
     ```
 
     
-    ``` settings.py
+    ```settings.py
     API_KEY=eyJhbGciOiJIUzI1NiIsInR...
     ```
 
@@ -152,9 +152,9 @@ description: "This section will help you get up and running with the DOM Deliver
   </Step>
   <Step title="Test the API" titleSize="h2">
     <Check>
-      DOM API DOCUMENTATION
+      **DOM API DOCUMENTATION**
     </Check>
-    You can test endpoints directly in the browser
+    > You can test endpoints directly in the browser
 
     #### Steps:
 
@@ -179,4 +179,73 @@ description: "This section will help you get up and running with the DOM Deliver
   </Step>
 </Steps>
 
-         
+<Check>
+  **POSTMAN**
+</Check>
+
+> Postman is a popular tool for testing REST APIs.
+
+#### Steps:
+
+1. Open https://postman.com or launch the app
+2. Click **New → HTTP Request**
+3. Enter your API URL, e.g.:
+
+   ```
+   GET https://your-api.com/commandes/
+   ```
+4. Go to the **Authorization** tab:
+   - Type: `Bearer Token`
+   - Token: `your_api_key`
+5. Click **Send**
+
+You will see the response in the bottom panel.
+
+You can also import your full `openapi.json` file in Postman:
+
+- Click **Import → Upload File → openapi.json**
+- Postman will generate all endpoints automatically
+
+---
+
+<Check>
+  **SWAGGER UI (FastAPI)**
+</Check>
+
+> FastAPI includes an interactive Swagger UI by default.
+
+#### Steps:
+
+1. If running locally, go to:
+
+   <CodeGroup>
+
+   ``` bash
+   http://localhost:8000/docs 
+   ```
+
+   </CodeGroup>
+
+   If deployed on Render:
+
+   <CodeGroup>
+
+   ``` arduino
+   https://your-api.onrender.com/docs
+   ```
+
+   </CodeGroup>
+2. All your endpoints are listed. Click on one to expand it.
+3. Click **"Authorize"**, then enter:
+
+   <CodeGroup>
+
+   ``` php-template
+   Bearer <your_api_key>
+   ```
+
+   </CodeGroup>
+4. Click **"Try it out"**
+5. Fill in parameters (if any) and click **Execute**
+
+You’ll see the full request and response below.
