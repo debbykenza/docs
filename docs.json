@@ -25,7 +25,8 @@
             "pages": [
               "index",
               "quickstart",
-              "development"
+              "development",
+              "installation"
             ]
           },
           {
