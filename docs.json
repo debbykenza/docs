@@ -10,9 +10,9 @@
     }
   },
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#F97316",   
+    "light": "#FDBA74",     
+    "dark": "#C2410C"       
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -54,6 +54,7 @@
             "group": "Endpoint Examples",
             "pages": [
               "api-reference/endpoint/get",
+              "api-reference/endpoint/clients/get",
               "api-reference/endpoint/create",
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
