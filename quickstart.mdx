@@ -1,7 +1,39 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in under 5 minutes"
+description: "This section will help you get up and running with the DOM Delivery Management API in just a few minutes."
 ---
+
+<Steps>
+  <Step title="Create an Account">
+    To interact with the API, first register as a user:
+
+    ![image.png](/images/image.png)
+  </Step>
+  <Step title="Authenticate and Get a Token">
+    Login to receive your access token:
+
+    ```json
+    {
+      "email": "your@email.com",
+      "mot_de_passe": "yourpassword"
+    }
+    ```
+
+    <ResponseExample>
+
+    ```json filename
+    {
+      "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1YzQxZTJkYS0zNzBhLTQ5YjgtYjNlZi0xZDgwOTI0NzA4NmYiLCJleHAiOjE3MDA4NDA0MDB9.6L-0htJpZKT9sNlzZAYI0Z1EK0e9U1nm3utBNVft5m8",
+      "token_type": "bearer"
+    }
+    ```
+
+    </ResponseExample>
+  </Step>
+  <Step title="Start Using the API">
+    Here’s how to list deliveries (example):
+  </Step>
+</Steps>
 
 ## Setup your development
 
