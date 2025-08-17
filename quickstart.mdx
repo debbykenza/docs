@@ -6,12 +6,12 @@ description: "Cette section vous aidera à démarrer avec l’API DOM Delivery M
 ## Que faire :
 
 - Inscrivez-vous ou connectez-vous
-- Allez dans la section **« Clés API »**
-- Cliquez sur **« Générer une clé API »**
-- Copiez la clé privée qui s’affiche (vous ne la verrez plus par la suite).
+- Allez dans la section **« Clés API »**.
+- Cliquez sur **« Générer une clé API »**.
+- Copiez la clé privée qui s’affiche 
 
 <Warning>
-  **Important:** Chaque clé est unique pour l’utilisateur et **ne doit pas être partagée ni exposée **publiquement.
+  **Important **: chaque clé est unique pour l’utilisateur et **ne doit pas être partagée ni exposée **publiquement.
 </Warning>
 
 <Steps>
@@ -74,7 +74,7 @@ description: "Cette section vous aidera à démarrer avec l’API DOM Delivery M
     Si vous utilisez JavaScript (React, Node.js, etc.) :
 
     <Warning>
-      Ne jamais coder la clé en dur dans des dépôts de code publics.
+      **Ne jamais coder la clé en dur dans des dépôts de code publics.**
     </Warning>
     <CodeGroup>
 
@@ -168,13 +168,13 @@ description: "Cette section vous aidera à démarrer avec l’API DOM Delivery M
 
     ![Api Reference Pn](/images/api_reference.png)
 
-    The response will appear below with status code and data.
+    La réponse apparaîtra en dessous avec le code de statut et les données.
 
     <Warning>
-      Utilisez votre **clé API** dans l’en-tête de la manière suivante :
+      Utilisez votre clé API dans l’en-tête comme suit :
     </Warning>
     ```json
-    Authorization: Bearer <votre\_clé\_api>
+    Authorization: Bearer <your_api_key>
     ```
   </Step>
 </Steps>
@@ -188,33 +188,27 @@ description: "Cette section vous aidera à démarrer avec l’API DOM Delivery M
 #### Étapes:
 
 1. Ouvrez https://postman.com ou lancez l’application.
-2. Cliquez sur **Nouveau → Requête HTTP**
+2. Cliquez sur **Nouveau → Requête HTTP**.
 3. Saisissez l’URL de votre API, par exemple :
 
-   ```
-   GET https://your-api.com/commandes/
-   ```
-4. Allez dans l’onglet **Autorisation** :
-   - Type: `Bearer Token`
-   - Token: votre_clé\_api
-5. Cliquez sur **Envoyer**
+```
+GET https://your-api.com/commandes/
+```
+
+1. Allez dans l’onglet **Autorisation** :
+   - **Type** : Bearer Token
+   - **Token** : votre_clé\_api
+2. Cliquez sur **Envoyer**.
 
 Vous verrez la réponse dans le panneau inférieur.
-
-Vous pouvez également importer votre fichier complet **openapi.json** dans Postman :
-
-- Cliquez sur **Importer → Télécharger un fichier → openapi.json**
-- Postman générera automatiquement tous les points de terminaison.
-
----
 
 <Check>
   **SWAGGER UI (FastAPI)**
 </Check>
 
-> FastAPI inclut par défaut une interface interactive Swagger UI.
+> FastAPI inclut par défaut une interface interactive **Swagger UI**.
 
-#### Étapes :
+#### Étapes:
 
 1. Si vous exécutez localement, allez à :
 
@@ -226,12 +220,12 @@ Vous pouvez également importer votre fichier complet **openapi.json** dans Post
 
    </CodeGroup>
 
-   Si déployé sur Render :
+   Si vous êtes déployé sur Render :
 
    <CodeGroup>
 
    ```arduino
-   https://votre-api.onrender.com/docs
+   https://your-api.onrender.com/docs
    ```
 
    </CodeGroup>
@@ -241,11 +235,11 @@ Vous pouvez également importer votre fichier complet **openapi.json** dans Post
    <CodeGroup>
 
    ```php-template
-   Bearer <votre_api_key>
+   Bearer <your_api_key>
    ```
 
    </CodeGroup>
-4. Cliquez sur **« Try it out »**
+4. Cliquez sur **« Try it out »**.
 5. Remplissez les paramètres (le cas échéant) et cliquez sur **Exécuter**.
 
 Vous verrez la requête complète et la réponse en dessous.
