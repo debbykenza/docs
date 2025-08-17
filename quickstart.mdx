@@ -1,27 +1,27 @@
 ---
 title: "Quickstart"
-description: "This section will help you get up and running with the DOM Delivery Management API in just a few minutes."
+description: "Cette section vous aidera à démarrer avec l’API DOM Delivery Management en seulement quelques minutes."
 ---
 
-## **What to do:**
+## Que faire :
 
-- Sign up or log in
-- Go to the “API Keys” section
-- Click on **“Generate API Key”**
-- Copy the **private key** that appears (you won’t see it again)
+- Inscrivez-vous ou connectez-vous
+- Allez dans la section **« Clés API »**
+- Cliquez sur **« Générer une clé API »**
+- Copiez la clé privée qui s’affiche (vous ne la verrez plus par la suite).
 
 <Warning>
-  **Important:** Each key is unique to the user and must **not be shared or exposed** publicly.
+  **Important:** Chaque clé est unique pour l’utilisateur et **ne doit pas être partagée ni exposée **publiquement.
 </Warning>
 
 <Steps>
-  <Step title="Create an Account" titleSize="h2">
-    To interact with the API, first register as a user:
+  <Step title="Créer un compte" titleSize="h2">
+    Pour interagir avec l’API, inscrivez-vous d’abord en tant qu’utilisateur :
 
-    ![Captured'écran2025 07 17191749 Pn](/Captured'écran2025-07-17191749.png)
+    ![image.png](/images/image.png)
   </Step>
-  <Step title="Authenticate and Get a Token" titleSize="h2">
-    Login to receive your access token:
+  <Step title="S’authentifier et obtenir un jeton" titleSize="h2">
+    Connectez-vous pour recevoir votre jeton d’accès :
 
     <RequestExample>
 
@@ -45,8 +45,8 @@ description: "This section will help you get up and running with the DOM Deliver
 
     </ResponseExample>
   </Step>
-  <Step title="Install an HTTP client library in your project directory" titleSize="h2">
-    If using `JavaScript `(React, Node.js, etc.):
+  <Step title="Installez une bibliothèque cliente HTTP dans le répertoire de votre projet." titleSize="h2">
+    Si vous utilisez JavaScript (React, Node.js, etc.) :
 
     <CodeGroup>
 
@@ -56,7 +56,7 @@ description: "This section will help you get up and running with the DOM Deliver
 
     </CodeGroup>
 
-    If using `Python:`
+    Si vous utilisez Python :
 
     <CodeGroup>
 
@@ -66,15 +66,15 @@ description: "This section will help you get up and running with the DOM Deliver
 
     </CodeGroup>
   </Step>
-  <Step title="Store the API key" titleSize="h2">
-    Inside an environment variable or a secure config file in the project.
+  <Step title="Stockez la clé API" titleSize="h2">
+    Dans une variable d’environnement ou un fichier de configuration sécurisé dans le projet.
 
-    ### Example:
+    ### Exemple:
 
-    If using `JavaScript `(React, Node.js, etc.):
+    Si vous utilisez JavaScript (React, Node.js, etc.) :
 
     <Warning>
-      **Never hardcode the key directly into public code repositories.**
+      Ne jamais coder la clé en dur dans des dépôts de code publics.
     </Warning>
     <CodeGroup>
 
@@ -84,7 +84,7 @@ description: "This section will help you get up and running with the DOM Deliver
 
     </CodeGroup>
 
-    If using `Python:`
+    Si vous utilisez Python :
 
     <CodeGroup>
 
@@ -99,8 +99,8 @@ description: "This section will help you get up and running with the DOM Deliver
 
     </CodeGroup>
   </Step>
-  <Step title="Use the key in HTTP requests" titleSize="h2">
-    📂 Example 1 - JavaScript project (React, Node.js…)
+  <Step title="Utilisez la clé dans les requêtes HTTP" titleSize="h2">
+    Exemple 1 – Projet JavaScript (React, Node.js…)
 
     <CodeGroup>
 
@@ -127,7 +127,7 @@ description: "This section will help you get up and running with the DOM Deliver
 
     </CodeGroup>
 
-    🐍 Example 2 - Python project (Flask, FastAPI, etc.)
+    Exemple 2 – Projet Python (Flask, FastAPI, etc.)
 
     <CodeGroup>
 
@@ -150,31 +150,31 @@ description: "This section will help you get up and running with the DOM Deliver
 
     </CodeGroup>
   </Step>
-  <Step title="Test the API" titleSize="h2">
+  <Step title="Tester l’API" titleSize="h2">
     <Check>
       **DOM API DOCUMENTATION**
     </Check>
-    > You can test endpoints directly in the browser
+    > Vous pouvez tester les points de terminaison directement dans le navigateur.
 
-    #### Steps:
+    #### Étapes:
 
-    1. Go to your DOM API DOCUMENTATION
-    2. Go to api-refence section
-    3. In the sidebar, choose a route (e.g., `GET /commandes/`)
-    4. Click on the route to expand the details.
-    5. Click the **"Try It"** button.
-    6. Enter any required parameters or headers (e.g., `Authorization`).
-    7. Click **Send Request**.
+    1. Allez dans votre **DOCUMENTATION API DOM**.
+    2. Accédez à la section **api-reference**.
+    3. Dans la barre latérale, choisissez une route (par exemple, **GET /commandes/**).
+    4. Cliquez sur la route pour afficher les détails.
+    5. Cliquez sur le bouton **« Try It »**.
+    6. Saisissez tous les paramètres ou en-têtes requis (par exemple, **Authorization**).
+    7. Cliquez sur **Envoyer la requête**.
 
     ![Api Reference Pn](/images/api_reference.png)
 
     The response will appear below with status code and data.
 
     <Warning>
-      Use your **API key** in the header like this:
+      Utilisez votre **clé API** dans l’en-tête de la manière suivante :
     </Warning>
     ```json
-    Authorization: Bearer <your_api_key>
+    Authorization: Bearer <votre\_clé\_api>
     ```
   </Step>
 </Steps>
@@ -183,28 +183,28 @@ description: "This section will help you get up and running with the DOM Deliver
   **POSTMAN**
 </Check>
 
-> Postman is a popular tool for testing REST APIs.
+> Postman est un outil populaire pour tester les API REST.
 
-#### Steps:
+#### Étapes:
 
-1. Open https://postman.com or launch the app
-2. Click **New → HTTP Request**
-3. Enter your API URL, e.g.:
+1. Ouvrez https://postman.com ou lancez l’application.
+2. Cliquez sur **Nouveau → Requête HTTP**
+3. Saisissez l’URL de votre API, par exemple :
 
    ```
    GET https://your-api.com/commandes/
    ```
-4. Go to the **Authorization** tab:
+4. Allez dans l’onglet **Autorisation** :
    - Type: `Bearer Token`
-   - Token: `your_api_key`
-5. Click **Send**
+   - Token: votre_clé\_api
+5. Cliquez sur **Envoyer**
 
-You will see the response in the bottom panel.
+Vous verrez la réponse dans le panneau inférieur.
 
-You can also import your full `openapi.json` file in Postman:
+Vous pouvez également importer votre fichier complet **openapi.json** dans Postman :
 
-- Click **Import → Upload File → openapi.json**
-- Postman will generate all endpoints automatically
+- Cliquez sur **Importer → Télécharger un fichier → openapi.json**
+- Postman générera automatiquement tous les points de terminaison.
 
 ---
 
@@ -212,40 +212,40 @@ You can also import your full `openapi.json` file in Postman:
   **SWAGGER UI (FastAPI)**
 </Check>
 
-> FastAPI includes an interactive Swagger UI by default.
+> FastAPI inclut par défaut une interface interactive Swagger UI.
 
-#### Steps:
+#### Étapes :
 
-1. If running locally, go to:
+1. Si vous exécutez localement, allez à :
 
    <CodeGroup>
 
-   ``` bash
+   ```bash
    http://localhost:8000/docs 
    ```
 
    </CodeGroup>
 
-   If deployed on Render:
+   Si déployé sur Render :
 
    <CodeGroup>
 
-   ``` arduino
-   https://your-api.onrender.com/docs
+   ```arduino
+   https://votre-api.onrender.com/docs
    ```
 
    </CodeGroup>
-2. All your endpoints are listed. Click on one to expand it.
-3. Click **"Authorize"**, then enter:
+2. Tous vos points de terminaison sont listés. Cliquez sur l’un d’eux pour l’ouvrir.
+3. Cliquez sur **« Authorize »**, puis saisissez :
 
    <CodeGroup>
 
-   ``` php-template
-   Bearer <your_api_key>
+   ```php-template
+   Bearer <votre_api_key>
    ```
 
    </CodeGroup>
-4. Click **"Try it out"**
-5. Fill in parameters (if any) and click **Execute**
+4. Cliquez sur **« Try it out »**
+5. Remplissez les paramètres (le cas échéant) et cliquez sur **Exécuter**.
 
-You’ll see the full request and response below.
+Vous verrez la requête complète et la réponse en dessous.
